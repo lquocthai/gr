@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/booknow.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Thanh Toán</title>
+</head>
+
+<body>
+    <div  class="header-booknow d-flex">
+        <div class="contact-booknow">
+            <a  href="tel: 0123456789" id="hotline" style="padding: 0 5px;">
+                <i class="fa-solid fa-phone"></i> 0123456789
+            </a>
+            <a href="#" id="face" style="padding: 0 5px;">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="" id="ins" style="padding: 0 5px;">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="" id="youtube" style="padding: 0 5px;">
+                <i class="fa-brands fa-youtube"></i>
+            </a> 
+        </div>
+        <div class="logo-booknow">
+            <a href="../index.html">
+                <img src="../img/logo.png.jpg" alt="" style="border-radius: 50%;height: 80px;padding: 10px 0px;">
+            </a>
+        </div>
+        <div class="login-booknow">
+            <a href="./login.html" class="login">
+                <i class="fa-solid fa-user" style="font-size: 16px; padding-right: 10px;"></i>log in</a>
+        </div>
+
+    </div>
+    <main>
+        <div class="container">
+            <div class="main-booking">
+                <div class="main-top position-relative d-flex align-items-center justify-content-center">
+                    <a href="./booknow.html" class="back" title="Quay lại">
+                        <i class="fa fa-angle-left"></i>
+                        Quay lại </a>
+                    <h2>Thông tin đặt phòng</h2>
+                </div>
+                <form action="" class="frmBooking" id="frmBooking" method="post">
+                    <div class="main-grid d-flex">
+                        <div class="grid-item">
+                            <div class="grid-content">
+                                <div class="form block">
+                                    <h6 class="h6_title">Thông tin người đặt phòng</h6>
+                                    <div class="flex-input">
+                                        <div class="flex-box">
+                                            <div class="box">
+                                                <label for="b_strip">Tiêu đề</label>
+                                                <select name="b_strip" id="b_strip" class="select2-box">
+                                                    <option value="0">Ông</option>
+                                                    <option value="1">Bà</option>
+                                                    <option value="2">Anh</option>
+                                                    <option value="3">Chị</option>
+                                                </select>
+                                            </div>
+                                            <div class="box">
+                                                <label for="b_fname">Tên <span>*</span></label>
+                                                <input type="text" class="form-control" name="b_fname" id="b_fname">
+                                            </div>
+                                        </div>
+                                        <div class="box">
+                                            <label for="b_lname">Họ <span>*</span></label>
+                                            <input type="text" class="form-control" name="b_lname" id="b_lname">
+                                        </div>
+                                        <div class="box">
+                                            <label for="b_mail">Email <span>*</span></label>
+                                            <input type="text" class="form-control" name="b_mail" id="b_mail">
+                                        </div>
+                                        <div class="box">
+                                            <label for="b_mail_confirm">Nhập lại email <span>*</span></label>
+                                            <input type="text" class="form-control" name="b_mail_confirm"
+                                                id="b_mail_confirm">
+                                        </div>
+                                        <div class="box">
+                                            <label for="b_tel">Số điện thoại <span>*</span></label>
+                                            <input class="form-control" id="b_tel" name="b_tel" type="text"
+                                                placeholder="987 654 321">
+                                            <input type="hidden" class="form-control" name="b_tel_iso" id="b_tel_iso"
+                                                value="vn">
+                                            <input type="hidden" class="form-control" name="b_tel_code" id="b_tel_code"
+                                                value="84">
+                                        </div>
+                                        <div class="box">
+                                            <label for="b_country">Quốc gia <span>*</span></label>
+                                            <select name="b_country" id="b_country" class="select2-box">
+                                                <option value="244">Aaland Islands</option>
+                                                <option value="1">Afghanistan</option>
+                                                <option value="2">Albania</option>
+                                                <option value="3">Algeria</option>
+                                                <option value="4">American Samoa</option>
+                                                <option value="5">Andorra</option>
+                                                <option value="6">Angola</option>
+                                                <option value="7">Anguilla</option>
+                                                <option value="8">Antarctica</option>
+                                                <option value="9">Antigua and Barbuda</option>
+                                                <option value="10">Argentina</option>
+                                                <option value="11">Armenia</option>
+                                                <option value="12">Aruba</option>
+                                                <option value="252">Ascension Island (British)</option>
+                                                <option value="13">Australia</option>
+                                                <option value="14">Austria</option>
+                                                <option value="15">Azerbaijan</option>
+                                                <option value="16">Bahamas</option>
+                                                <option value="17">Bahrain</option>
+                                                <option value="18">Bangladesh</option>
+                                                <option value="19">Barbados</option>
+                                                <option value="20">Belarus</option>
+                                                <option value="21">Belgium</option>
+                                                <option value="22">Belize</option>
+                                                <option value="23">Benin</option>
+                                                <option value="24">Bermuda</option>
+                                                <option value="25">Bhutan</option>
+                                                <option value="26">Bolivia</option>
+                                                <option value="245">Bonaire, Sint Eustatius and Saba</option>
+                                                <option value="27">Bosnia and Herzegovina</option>
+                                                <option value="28">Botswana</option>
+                                                <option value="29">Bouvet Island</option>
+                                                <option value="30">Brazil</option>
+                                                <option value="31">British Indian Ocean Territory</option>
+                                                <option value="32">Brunei Darussalam</option>
+                                                <option value="33">Bulgaria</option>
+                                                <option value="34">Burkina Faso</option>
+                                                <option value="35">Burundi</option>
+                                                <option value="36">Cambodia</option>
+                                                <option value="37">Cameroon</option>
+                                                <option value="38">Canada</option>
+                                                <option value="251">Canary Islands</option>
+                                                <option value="39">Cape Verde</option>
+                                                <option value="40">Cayman Islands</option>
+                                                <option value="41">Central African Republic</option>
+                                                <option value="42">Chad</option>
+                                                <option value="43">Chile</option>
+                                                <option value="44">China</option>
+                                                <option value="45">Christmas Island</option>
+                                                <option value="46">Cocos (Keeling) Islands</option>
+                                                <option value="47">Colombia</option>
+                                                <option value="48">Comoros</option>
+                                                <option value="49">Congo</option>
+                                                <option value="50">Cook Islands</option>
+                                                <option value="51">Costa Rica</option>
+                                                <option value="52">Cote D Ivoire</option>
+                                                <option value="53">Croatia</option>
+                                                <option value="54">Cuba</option>
+                                                <option value="246">Curacao</option>
+                                                <option value="55">Cyprus</option>
+                                                <option value="56">Czech Republic</option>
+                                                <option value="237">Democratic Republic of Congo</option>
+                                                <option value="57">Denmark</option>
+                                                <option value="58">Djibouti</option>
+                                                <option value="59">Dominica</option>
+                                                <option value="60">Dominican Republic</option>
+                                                <option value="61">East Timor</option>
+                                                <option value="62">Ecuador</option>
+                                                <option value="63">Egypt</option>
+                                                <option value="64">El Salvador</option>
+                                                <option value="65">Equatorial Guinea</option>
+                                                <option value="66">Eritrea</option>
+                                                <option value="67">Estonia</option>
+                                                <option value="68">Ethiopia</option>
+                                                <option value="69">Falkland Islands (Malvinas)</option>
+                                                <option value="70">Faroe Islands</option>
+                                                <option value="71">Fiji</option>
+                                                <option value="72">Finland</option>
+                                                <option value="76">French Polynesia</option>
+                                                <option value="78">Gabon</option>
+                                                <option value="79">Gambia</option>
+                                                <option value="80">Georgia</option>
+                                                <option value="81">Germany</option>
+                                                <option value="82">Ghana</option>
+                                                <option value="83">Gibraltar</option>
+                                                <option value="84">Greece</option>
+                                                <option value="85">Greenland</option>
+                                                <option value="86">Grenada</option>
+                                                <option value="88">Guam</option>
+                                                <option value="89">Guatemala</option>
+                                                <option value="256">Guernsey</option>
+                                                <option value="90">Guinea</option>
+                                                <option value="91">Guinea-Bissau</option>
+                                                <option value="92">Guyana</option>
+                                                <option value="93">Haiti</option>
+                                                <option value="95">Honduras</option>
+                                                <option value="96">Hong Kong</option>
+                                                <option value="97">Hungary</option>
+                                                <option value="98">Iceland</option>
+                                                <option value="99">India</option>
+                                                <option value="100">Indonesia</option>
+                                                <option value="102">Iraq</option>
+                                                <option value="103">Ireland</option>
+                                                <option value="254">Isle of Man</option>
+                                                <option value="104">Israel</option>
+                                                <option value="105">Italy</option>
+                                                <option value="106">Jamaica</option>
+                                                <option value="107">Japan</option>
+                                                <option value="257">Jersey</option>
+                                                <option value="108">Jordan</option>
+                                                <option value="109">Kazakhstan</option>
+                                                <option value="110">Kenya</option>
+                                                <option value="111">Kiribati</option>
+                                                <option value="253">Kosovo, Republic of</option>
+                                                <option value="114">Kuwait</option>
+                                                <option value="115">Kyrgyzstan</option>
+                                                <option value="117">Latvia</option>
+                                                <option value="118">Lebanon</option>
+                                                <option value="119">Lesotho</option>
+                                                <option value="120">Liberia</option>
+                                                <option value="122">Liechtenstein</option>
+                                                <option value="123">Lithuania</option>
+                                                <option value="124">Luxembourg</option>
+                                                <option value="125">Macau</option>
+                                                <option value="127">Madagascar</option>
+                                                <option value="128">Malawi</option>
+                                                <option value="129">Malaysia</option>
+                                                <option value="130">Maldives</option>
+                                                <option value="131">Mali</option>
+                                                <option value="132">Malta</option>
+                                                <option value="133">Marshall Islands</option>
+                                                <option value="135">Mauritania</option>
+                                                <option value="136">Mauritius</option>
+                                                <option value="137">Mayotte</option>
+                                                <option value="138">Mexico</option>
+                                                <option value="141">Monaco</option>
+                                                <option value="142">Mongolia</option>
+                                                <option value="242">Montenegro</option>
+                                                <option value="143">Montserrat</option>
+                                                <option value="144">Morocco</option>
+                                                <option value="145">Mozambique</option>
+                                                <option value="146">Myanmar</option>
+                                                <option value="147">Namibia</option>
+                                                <option value="148">Nauru</option>
+                                                <option value="149">Nepal</option>
+                                                <option value="150">Netherlands</option>
+                                                <option value="151">Netherlands Antilles</option>
+                                                <option value="152">New Caledonia</option>
+                                                <option value="153">New Zealand</option>
+                                                <option value="154">Nicaragua</option>
+                                                <option value="155">Niger</option>
+                                                <option value="156">Nigeria</option>
+                                                <option value="157">Niue</option>
+                                                <option value="112">North Korea</option>
+                                                <option value="159">Northern Mariana Islands</option>
+                                                <option value="160">Norway</option>
+                                                <option value="161">Oman</option>
+                                                <option value="162">Pakistan</option>
+                                                <option value="163">Palau</option>
+                                                <option value="247">Palestinian Territory, Occupied</option>
+                                                <option value="164">Panama</option>
+                                                <option value="165">Papua New Guinea</option>
+                                                <option value="166">Paraguay</option>
+                                                <option value="167">Peru</option>
+                                                <option value="168">Philippines</option>
+                                                <option value="169">Pitcairn</option>
+                                                <option value="170">Poland</option>
+                                                <option value="171">Portugal</option>
+                                                <option value="172">Puerto Rico</option>
+                                                <option value="173">Qatar</option>
+                                                <option value="174">Reunion</option>
+                                                <option value="175">Romania</option>
+                                                <option value="177">Rwanda</option>
+                                                <option value="178">Saint Kitts and Nevis</option>
+                                                <option value="179">Saint Lucia</option>
+                                                <option value="180">Saint Vincent and the Grenadines</option>
+                                                <option value="181">Samoa</option>
+                                                <option value="182">San Marino</option>
+                                                <option value="183">Sao Tome and Principe</option>
+                                                <option value="184">Saudi Arabia</option>
+                                                <option value="185">Senegal</option>
+                                                <option value="243">Serbia</option>
+                                                <option value="186">Seychelles</option>
+                                                <option value="187">Sierra Leone</option>
+                                                <option value="188">Singapore</option>
+                                                <option value="190">Slovenia</option>
+                                                <option value="191">Solomon Islands</option>
+                                                <option value="192">Somalia</option>
+                                                <option value="193">South Africa</option>
+                                                <option value="113">South Korea</option>
+                                                <option value="248">South Sudan</option>
+                                                <option value="195">Spain</option>
+                                                <option value="196">Sri Lanka</option>
+                                                <option value="249">St. Barthelemy</option>
+                                                <option value="250">St. Martin (French part)</option>
+                                                <option value="199">Sudan</option>
+                                                <option value="200">Suriname</option>
+                                                <option value="202">Swaziland</option>
+                                                <option value="203">Sweden</option>
+                                                <option value="204">Switzerland</option>
+                                                <option value="206">Taiwan</option>
+                                                <option value="207">Tajikistan</option>
+                                                <option value="209">Thailand</option>
+                                                <option value="210">Togo</option>
+                                                <option value="211">Tokelau</option>
+                                                <option value="212">Tonga</option>
+                                                <option value="213">Trinidad and Tobago</option>
+                                                <option value="255">Tristan da Cunha</option>
+                                                <option value="214">Tunisia</option>
+                                                <option value="215">Turkey</option>
+                                                <option value="216">Turkmenistan</option>
+                                                <option value="217">Turks and Caicos Islands</option>
+                                                <option value="218">Tuvalu</option>
+                                                <option value="219">Uganda</option>
+                                                <option value="220">Ukraine</option>
+                                                <option value="221">United Arab Emirates</option>
+                                                <option value="222">United Kingdom</option>
+                                                <option value="223">United States</option>
+                                                <option value="225">Uruguay</option>
+                                                <option value="226">Uzbekistan</option>
+                                                <option value="227">Vanuatu</option>
+                                                <option value="229">Venezuela</option>
+                                                <option selected value="230">Việt Nam</option>
+                                                <option value="234">Western Sahara</option>
+                                                <option value="235">Yemen</option>
+                                                <option value="238">Zambia</option>
+                                                <option value="239">Zimbabwe</option>
+                                            </select>
+                                        </div>
+                                        <div class="box box-content">
+                                            <label for="b_content">Yêu cầu thêm</label>
+                                            <textarea class="form-control" name="b_content" id="b_content" rows="4"
+                                                placeholder="Ví dụ: Sở thích về Giường, địa điểm đón hoặc trả khách"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="policy block">
+                                    <h6 class="h6_title">Chính sách đặt phòng</h6>
+                                    <div class="room-policy">
+                                        <p class="room-name">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_941_18288)">
+                                                    <path
+                                                        d="M17.7955 3.45417L14.4622 0.12084C14.4232 0.0822231 14.3771 0.0516709 14.3263 0.0309356C14.2755 0.0102004 14.2212 -0.000310075 14.1663 6.96429e-06H3.33301C3.00149 6.96429e-06 2.68354 0.131703 2.44912 0.366123C2.2147 0.600544 2.08301 0.918486 2.08301 1.25001V18.75C2.08301 19.0815 2.2147 19.3995 2.44912 19.6339C2.68354 19.8683 3.00149 20 3.33301 20H16.6663C16.9979 20 17.3158 19.8683 17.5502 19.6339C17.7846 19.3995 17.9163 19.0815 17.9163 18.75V3.75001C17.9167 3.69517 17.9061 3.64081 17.8854 3.59005C17.8647 3.53928 17.8341 3.49311 17.7955 3.45417ZM14.583 1.42084L16.4955 3.33334H14.9997C14.8892 3.33334 14.7832 3.28944 14.705 3.2113C14.6269 3.13316 14.583 3.02718 14.583 2.91667V1.42084ZM17.083 18.75C17.083 18.8605 17.0391 18.9665 16.961 19.0446C16.8828 19.1228 16.7768 19.1667 16.6663 19.1667H3.33301C3.2225 19.1667 3.11652 19.1228 3.03838 19.0446C2.96024 18.9665 2.91634 18.8605 2.91634 18.75V1.25001C2.91634 1.1395 2.96024 1.03352 3.03838 0.955379C3.11652 0.877239 3.2225 0.83334 3.33301 0.83334H13.7497V2.91667C13.7497 3.24819 13.8814 3.56614 14.1158 3.80056C14.3502 4.03498 14.6682 4.16667 14.9997 4.16667H17.083V18.75Z"
+                                                        fill="#3C3C3B" />
+                                                    <path d="M15.0003 7.5H6.66699V8.33333H15.0003V7.5Z"
+                                                        fill="#3C3C3B" />
+                                                    <path d="M15 10H5V10.8333H15V10Z" fill="#3C3C3B" />
+                                                    <path d="M15 12.5H5V13.3333H15V12.5Z" fill="#3C3C3B" />
+                                                    <path d="M11.6667 15H5V15.8333H11.6667V15Z" fill="#3C3C3B" />
+                                                    <path d="M15.0003 15H14.167V15.8333H15.0003V15Z" fill="#3C3C3B" />
+                                                    <path d="M13.3333 15H12.5V15.8333H13.3333V15Z" fill="#3C3C3B" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_941_18288">
+                                                        <rect width="20" height="20" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            Phòng Deluxe King hướng thành phố
+                                        </p>
+                                        <div class="room-content">
+                                            <p><b>Hủy:</b> If cancelled, modified or no show, the full booking item
+                                                amount will be charged.</p>
+                                            <p><b>Thanh toán:</b> Full booking item amount will be charged</p>
+                                            <p><b>Đã bao gồm ăn sáng</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-type block" id="payment-type">
+                                    <h6 class="h6_title">Phương thức thanh toán</h6>
+                                    <div class="select-payment-type">
+                                        <select class="" name="b_payment" id="b_payment">
+                                            <option value="opvn">
+                                                OnePay Vietnam (Thẻ ATM)
+                                            </option>
+                                            <option value="op">
+                                                Online payment via International Cards (Visa, Master, JCB, Amex, CUP)
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <label for="b_agree" class="label_agree d-flex align-items-center">
+                                        <input class="form-check-input" type="radio" name="b_agree" id="b_agree">
+                                        <span>Vui lòng đọc kỹ và đồng ý với điều khoản đặt phòng bằng cách đánh dấu vào
+                                            ô bên cạnh.</span>
+                                    </label>
+                                    <div class="submit-area d-flex align-items-center ">
+                                        <a href=""
+                                            class="submitBooking  align-items-center justify-content-center">
+                                            <i class="fa-solid fa-lock"></i>
+                                            Thực hiện đặt phòng </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-content block">
+                                <h6 class="h6_title">Yêu cầu đặt phòng của bạn</h6>
+                                <div class="title-hotel">
+                                    <div class="hotel-info">
+                                        <a target="_blank"
+                                            href="../index.html"
+                                            title="Green Hotel">Green Hotel
+                                            Centre</a>
+                                    </div>
+                                    <div class="total-night">
+                                        <p>
+                                            Nhận phòng:
+                                            Thứ 5, 18/01/2024 từ 14:00 </p>
+                                        <p>
+                                            Trả phòng:
+                                            Thứ 6, 19/01/2024 cho đến 12:00 </p>
+                                        <p>(2 ngày 1 đêm)</p>
+                                    </div>
+                                </div>
+                                <div class="list-room-book">
+                                    <p class="title">Thông tin phòng</p>
+                                    <div class="collapse show" id="collapseListRoom">
+                                        <div class="list-book">
+                                            <div class="item-room-book">
+                                                <div class="left">
+                                                    <div class="room-name">
+                                                        <p>
+                                                            <b>Phòng :</b>
+                                                            Phòng Phòng Deluxe King hướng thành phố <br>
+                                                        </p>
+                                                        <p>Deluxe King City View - DP</p>
+
+                                                        <p>
+                                                            Giá phòng:
+                                                            3,400,000 VNĐ </p>
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="right">
+                                                    <p>
+                                                        3,400,000 VNĐ </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="total-rooms-price d-flex align-items-center justify-content-between">
+                                        <span>Giá phòng</span>
+                                        <span>
+                                            3,400,000 VNĐ </span>
+                                    </div>
+                                </div>
+                                <div class="service-right d-flex align-items-center justify-content-between">
+                                </div>
+
+                                <div class="offer-right">
+                                    <p>Nhập mã khuyến mại/ mã voucher</p>
+                                    <div class="offer-input">
+                                        <input type="text" placeholder="" data-hotel="60" name="offer_code"
+                                            id="offer_code" class="form-control" value="">
+                                        <a href="" class="promo-btn">Áp dụng</a>
+                                    </div>
+                                    <div class="offer-right-promo">
+                                        <p class="p_promo_text d-flex align-items-center justify-content-between">
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="total-all">
+                                    <div class="price d-flex align-items-center justify-content-between">
+                                        <span>Tổng giá:</span>
+                                        <span>
+                                            <span id="total-book" data-price="3400000">
+                                                3,400,000 VNĐ </span>
+                                        </span>
+                                    </div>
+                                    <p>Bao gồm tất cả các loại thuế và phí dịch vụ</p>
+                                    <p style="color: #f00">(Theo quy định của Ngân hàng Nhà nước Việt Nam, Quý khách vui
+                                        lòng thanh toán bằng VNĐ)</p>
+
+                                </div>
+                                <!-- <div class="deposit d-flex align-items-center justify-content-between">
+                                    <span></span>
+                                    <span></span>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="total_book" id="total_book" value="3400000">
+                    <input type="hidden" name="module" value="booking">
+                    <input type="hidden" name="view" value="payment">
+                    <input type="hidden" name="task" value="save">
+                    <input type="hidden" name="book_type" value="0">
+                    <input type="hidden" name="total_room" id="total_room" value="1">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-top d-flex" style="width: 100%;">
+                <div class="top-left">
+                    <h1>Nhận thông tin ưu đãi</h1>
+                    <form class="contact-email-form input d-flex" method="post"
+                        action="index.php?module=contact&view=contact&task=save_email">
+                        <input required id="email-contact" type="email" name="email-contact"
+                            placeholder="Email nhận bản tin khuyến mãi...">
+                        <button class="submit-email" type="submit" >Đăng ký <i class="fa fa-arrow-right"></i></button>
+                    </form>
+                </div>
+                <hr>
+                <div class="top-right">
+                    <div class="col-md-6 col">
+                        <h1 style="color: #fff">Bạn cần giúp đỡ?</h1>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="col-md-6 col-6">
+                            <div class="left">
+                                <p><a href="./booknow.html">Đặt phòng ngay</a></p>
+                                <p><a href="#">Hỗ trợ</a></p>
+                            </div>
+                            <br />
+                            <div class="right">
+                                <p>Bạn muốn đặt chỗ?</p>
+                                <a href="tel:0123456789"><img
+                                        src="https://booking.muongthanh.com//images/hotline-trang.svg"
+                                        alt="">0123456789</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-6">
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="top-right">
+                    <div class="col-md-12 col">
+                        <h1>ĐIỀU KHOẢN & QUY ĐỊNH</h1>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="col-md-12 col-12">
+                            <div class="left">
+                                <p><a href="">Điều khoản chung</a></p>
+                                <p><a href="">Quy định chung</a></p>
+                                <p><a href="">Quy định về thanh toán</a></p>
+                                <p><a href="">Quy định về xác nhận thông tin đặt phòng</a></p>
+                                <p><a href="">Chính sách giải quyết tranh chấp</a></p>
+                                <p><a href="">Chính sách quyền riêng tư</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container-footer">
+            <div class="footer-top">
+                <div class="dkkd-info">
+                    <div class="col-md-12">
+                        <p class="title">Số ĐKKD</p>
+                        <p>0123456789</p>
+                        <p>Đăng ký lần đầu ngày 01/01/2024</p>
+                        <!-- <p>Đăng ký thay đổi lần thứ 15 ngày 16/8/2022.</p> -->
+                        <a href="http://online.gov.vn/Home/WebDetails/98209"><img
+                                alt="Mường Thanh - Đảm bảo giá tốt nhất" style="width: 145px;"
+                                src="https://booking.muongthanh.com/images/logo-da-thong-bao-website-voi-bo-cong-thuong.png" /></a>
+                    </div>
+
+                </div>
+                <div class="dkkd-info">
+                    <div class="col-md-12">
+                        <p class="title">Nơi cấp:</p>
+                        <p>Sở Kế hoạch và Đầu tư Tp HCM </p>
+                        <p class="title">Lĩnh vực kinh doanh:</p>
+                        <p>Khách sạn, căn hộ kinh doanh dịch vụ lưu trú ngắn ngày; khu du lịch sinh thái, khu vui chơi
+                            giải trí, sân golf</p>
+                    </div>
+                </div>
+                <div class="dkkd-info">
+                    <div class="col-md-12">
+                        <p class="title">Trụ sở:</p>
+                        <p>Đường 17, linh Trung, Thủ Đức, TP Hồ Chí Minh, Việt Nam </p>
+                        <p class="title">Email:</p>
+                        <p><a href="mailto:info@greenhotel.vn">info@greenhotel.vn</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="container-footer">
+                <div class="d-flex flex-column-reverse flex-md-row justify-content-center align-items-center">
+                    <div class="col-md-5">
+                        <div class="left">
+                            <p>© 2022 Green Hotel. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="center">
+                            <div class="logo">
+                                <img src="../img/logo.png.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="right">
+                            <a href="" id="fb">
+                                <i class="fa-brands fa-facebook"></i></a>
+                            <a href="" id="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="" id="ytb">
+                                <i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let headerMenuBookNow = document.querySelector(".header-booknow");
+        let lastScrollYBookNow = window.scrollY;
+        window.addEventListener("scroll", () => {
+            if (lastScrollYBookNow < window.scrollY) {
+                headerMenuBookNow.classList.add("menu_hide");
+            }
+            else {
+                headerMenuBookNow.classList.remove("menu_hide");
+            }
+            lastScrollYBookNow = window.scrollY;
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/booknow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Đặt Phòng</title>
+</head>
+
+<body>
+    <div class="header-booknow d-flex">
+        <div class="contact-booknow">
+            <a href="tel: 0123456789" id="hotline" style="padding: 0 5px;">
+                <i class="fa-solid fa-phone"></i> 0123456789
+            </a>
+            <a href="" id="face" style="padding: 0 5px;">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="" id="ins" style="padding: 0 5px;">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="" id="youtube" style="padding: 0 5px;">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        <div class="logo-booknow">
+            <a href="../index.html">
+                <img src="../img/logo.png.jpg" alt="" style="border-radius: 50%;height: 80px;padding: 10px 0px;">
+            </a>
+        </div>
+        <div class="login-booknow">
+            <a href="./login.html" class="login">
+                <i class="fa-solid fa-user" style="font-size: 16px; padding-right: 10px;"></i>log in</a>
+        </div>
+
+    </div>
+    <div class="container-booknow">
+        <div class="home-slide-show">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="../img/ks2.jpg" alt="" style="width: 100%; height: 500px;">
+                </div>
+            </div>
+
+        </div>
+        <div class="block-book mt-16">
+            <div class="container-book">
+                <div class="search d-flex">
+                    <div class="input">
+                        <h2>Ngày nhận phòng</h2>
+                        <input type="date" name="" id="receive">
+                    </div>
+                    <div class="input">
+                        <h2>Ngày trả phòng</h2>
+                        <input type="date" name="" id="check-out">
+                    </div>
+                    <div class="input">
+                        <h2>Số phòng</h2>
+                        <input type="number" name="" id="room" value="1" min="1">
+                    </div>
+                    <div class="input">
+                        <h2>Mã khuyến mãi/Voucher</h2>
+                        <input type="text" name="" id="voucher" placeholder="Nhập mã khuyến mãi/Voucher" size="auto">
+                    </div>
+                    <div class="input d-flex align-items-center">
+                        <a href="" class="btn-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Tìm kiếm
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="request mt-16">
+            <h2 class="" style="font-weight: 600;font-size: 16px;line-height: 19px;">Vui lòng chọn phòng</h2>
+        </div>
+        <div class="container-room mt-16 d-flex">
+            <div class="">
+                <div class="choose-room d-flex">
+                    <div class="image">
+                        <img src="../img/aroom2.jpg" alt="" style="height: 220px;">
+
+                    </div>
+                    <div class="inf">
+                        <h2>Phòng Deluxe King hướng thành phố</h2>
+                        <div class="">
+                            <a href="" class="inf-room">
+                                <i class="fa-solid fa-bed"></i>
+                                1 giường queen size
+                            </a>
+                            <a href="" class="inf-room">30m <sup>2</sup></a>
+                        </div>
+                        <div class="">
+                            <img src="../img/tudo.png" alt="" style="height: 20px;padding: 10px;">
+                            <img src="../img/bed.png" alt="" style="height: 20px;padding: 10px;">
+                            <img src="../img/nosmoking.png" alt="" style="height: 20px;padding: 10px;">
+                        </div>
+                        <p>Căn phòng này có máy sấy, khu vực tiếp khách và máy lạnh.</p>
+                        <p>Giá chỉ từ</p>
+                        <p style="color: #F2A900;">3,400,000 VNĐ <span style="color: #000;">/ đêm</span></p>
+                        <button class="book-btn book-btn1-js" onclick="showRoom1">Chọn phòng</button>
+                    </div>
+                </div>
+                <div class="choose-room d-flex mt-16">
+                    <div class="image">
+                        <img src="../img/aroom3.jpg" alt="" style="height: 220px;">
+
+                    </div>
+                    <div class="inf">
+                        <h2>Phòng Deluxe Twin hướng thành phố</h2>
+                        <div class="">
+                            <a href="" class="inf-room">
+                                <i class="fa-solid fa-bed"></i>
+                                2 giường đơn
+                            </a>
+                            <a href="" class="inf-room">30m <sup>2</sup></a>
+                        </div>
+                        <div class="">
+                            <img src="../img/tudo.png" alt="" style="height: 20px;padding: 10px;">
+                            <img src="../img/bed.png" alt="" style="height: 20px;padding: 10px;">
+                            <img src="../img/nosmoking.png" alt="" style="height: 20px;padding: 10px;">
+                        </div>
+                        <p>Phòng Deluxe với 02 giường đơn, nhìn ra khung cảnh Thành phố Hạ Long</p>
+                        <p>Giá chỉ từ</p>
+                        <p style="color: #F2A900;">3,400,000 VNĐ <span style="color: #000;">/ đêm</span></p>
+                        <button class="book-btn book-btn2-js">Chọn phòng</button>
+                    </div>
+                </div>
+                <div class="choose-room d-flex mt-16">
+                    <div class="image">
+                        <img src="../img/aroom4.jpg" alt="" style="height: 220px;">
+
+                    </div>
+                    <div class="inf">
+                        <h2>Phòng Deluxe King hướng biển</h2>
+                        <div class="">
+                            <a href="" class="inf-room">
+                                <i class="fa-solid fa-bed"></i>
+                                1 giường queen size
+                            </a>
+                            <a href="" class="inf-room">30m <sup>2</sup></a>
+                        </div>
+                        <div class="">
+                            <img src="../img/tudo.png" alt="" style="height: 20px;padding: 10px;">
+                            <img src="../img/bed.png" alt="" style="height: 20px;padding: 10px;">
+                            <img src="../img/nosmoking.png" alt="" style="height: 20px;padding: 10px;">
+                        </div>
+                        <p>Căn phòng này có máy sấy, khu vực tiếp khách và máy lạnh.</p>
+                        <p>Giá chỉ từ</p>
+                        <p style="color: #F2A900;">3,400,000 VNĐ <span style="color: #000;">/ đêm</span></p>
+                        <button class="book-btn book-btn3-js">Chọn phòng</button>
+                    </div>
+                </div>
+                <div class="choose-room d-flex mt-16">
+                    <div class="image">
+                        <img src="../img/aroom1.jpg" alt="" style="height: 220px;">
+
+                    </div>
+                    <div class="inf">
+                        <h2>Phòng Deluxe Twin hướng biển</h2>
+                        <div class="">
+                            <a href="" class="inf-room">
+                                <i class="fa-solid fa-bed"></i>
+                                2 giường đơn
+                            </a>
+                            <a href="" class="inf-room">30m <sup>2</sup></a>
+                        </div>
+                        <div class="">
+                            <img src="../img/tudo.png" alt="" style="height: 20px;padding: 10px;">
+                            <img src="../img/bed.png" alt="" style="height: 20px;padding: 10px;">
+                            <img src="../img/nosmoking.png" alt="" style="height: 20px;padding: 10px;">
+                        </div>
+                        <p>Phòng Deluxe với 02 giường đơn, nhìn ra khung cảnh Thành phố Hạ Long.</p>
+                        <p>Giá chỉ từ</p>
+                        <p style="color: #F2A900;">3,400,000 VNĐ <span style="color: #000;">/ đêm</span></p>
+                        <button class="book-btn book-btn4-js">Chọn phòng</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block-book-inf">
+                <h3>Thông tin đặt hàng</h3>
+                <div class="static-inf-book">
+                    <p class="hotel-name">Green hotel </p>
+                    <div class="item-static">
+                        <b></b>
+
+                    </div>
+                </div>
+                <div class="room-inf-book">
+                    <p class="title">Thông tin phòng</p>
+                    <div class="list-room-book" style="max-height: 200px;">
+                        <div class="item-room-book d-none item-room-book1-js">
+                            <div class="room-name">
+                                <p>
+                                    <b>Phòng: </b>
+                                    Phòng Deluxe King hướng thành phố
+                                </p>
+                                <p>Deluxe King City View - DP</p>
+                            </div>
+                            <div class="room-btn d-flex">
+                                <p>3,400,000 VNĐ /đêm</p>
+                                <button class="cancel-btn cancel1-js">
+                                    <i class="fa-solid fa-x"></i>
+                                    Hủy</button>
+                            </div>
+                        </div>
+                        <div class="item-room-book d-none item-room-book2-js">
+                            <div class="room-name">
+                                <p>
+                                    <b>Phòng: </b>
+                                    Phòng Deluxe Twin hướng thành phố
+                                </p>
+                                <p>Deluxe King City View - DP</p>
+                            </div>
+                            <div class="room-btn d-flex">
+                                <p>3,400,000 VNĐ /đêm</p>
+                                <button class="cancel-btn cancel2-js">
+                                    <i class="fa-solid fa-x"></i>
+                                    Hủy</button>
+                            </div>
+                        </div>
+                        <div class="item-room-book d-none item-room-book3-js">
+                            <div class="room-name">
+                                <p>
+                                    <b>Phòng: </b>
+                                    Phòng Deluxe King hướng biển
+                                </p>
+                                <p>Deluxe King Ocean View - DP</p>
+                            </div>
+                            <div class="room-btn d-flex">
+                                <p>3,400,000 VNĐ /đêm</p>
+                                <button class="cancel-btn cancel3-js">
+                                    <i class="fa-solid fa-x"></i>
+                                    Hủy</button>
+                            </div>
+                        </div>
+                        <div class="item-room-book d-none item-room-book4-js">
+                            <div class="room-name">
+                                <p>
+                                    <b>Phòng: </b>
+                                    Phòng Deluxe Twin hướng biển
+                                </p>
+                                <p>Deluxe King Ocean View - DP</p>
+                            </div>
+                            <div class="room-btn d-flex">
+                                <p>3,400,000 VNĐ /đêm</p>
+                                <button class="cancel-btn cancel4-js">
+                                    <i class="fa-solid fa-x"></i>
+                                    Hủy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total-inf-book d-flex">
+                    <div class="title-total">Tổng cộng</div>
+                    <div class="total-book">
+                        0 VNĐ
+                    </div>
+                </div>
+                <a href="./checkout.html" class="book">Đặt ngay</a>
+
+
+            </div>
+        </div>
+        <footer>
+            <div class="container-footer">
+                <div class="footer-top d-flex" style="width: 100%;">
+                    <div class="top-left">
+                        <h1>Nhận thông tin ưu đãi</h1>
+                        <form class="contact-email-form input d-flex" method="post"
+                            action="index.php?module=contact&view=contact&task=save_email">
+                            <input required id="email-contact" type="email" name="email-contact"
+                                placeholder="Email nhận bản tin khuyến mãi...">
+                            <button class="submit-email" type="submit">Đăng ký <i
+                                    class="fa fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="top-right">
+                        <div class="col-md-6 col">
+                            <h1 style="color: #fff">Bạn cần giúp đỡ?</h1>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="col-md-6 col-6">
+                                <div class="left">
+                                    <p><a href="./booknow.html">Đặt phòng ngay</a></p>
+                                    <p><a href="#">Hỗ trợ</a></p>
+                                </div>
+                                <br />
+                                <div class="right">
+                                    <p>Bạn muốn đặt chỗ?</p>
+                                    <a href="tel:0123456789" style="text-decoration: none;"><img
+                                            src="https://booking.muongthanh.com//images/hotline-trang.svg"
+                                            alt="">0123456789</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6">
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="top-right">
+                        <div class="col-md-12 col">
+                            <h1>ĐIỀU KHOẢN & QUY ĐỊNH</h1>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="col-md-12 col-12">
+                                <div class="left">
+                                    <p><a href="">Điều khoản chung</a></p>
+                                    <p><a href="">Quy định chung</a></p>
+                                    <p><a href="">Quy định về thanh toán</a></p>
+                                    <p><a href="">Quy định về xác nhận thông tin đặt phòng</a></p>
+                                    <p><a href="">Chính sách giải quyết tranh chấp</a></p>
+                                    <p><a href="">Chính sách quyền riêng tư</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container-footer">
+                <div class="footer-top">
+                    <div class="dkkd-info">
+                        <div class="col-md-12">
+                            <p class="title">Số ĐKKD</p>
+                            <p>0123456789</p>
+                            <p>Đăng ký lần đầu ngày 01/01/2024</p>
+                            <!-- <p>Đăng ký thay đổi lần thứ 15 ngày 16/8/2022.</p> -->
+                            <a href="http://online.gov.vn/Home/WebDetails/98209"><img
+                                    alt="Mường Thanh - Đảm bảo giá tốt nhất" style="width: 145px;"
+                                    src="https://booking.muongthanh.com/images/logo-da-thong-bao-website-voi-bo-cong-thuong.png" /></a>
+                        </div>
+
+                    </div>
+                    <div class="dkkd-info">
+                        <div class="col-md-12">
+                            <p class="title">Nơi cấp:</p>
+                            <p>Sở Kế hoạch và Đầu tư Tp HCM </p>
+                            <p class="title">Lĩnh vực kinh doanh:</p>
+                            <p>Khách sạn, căn hộ kinh doanh dịch vụ lưu trú ngắn ngày; khu du lịch sinh thái, khu vui
+                                chơi giải trí, sân golf</p>
+                        </div>
+                    </div>
+                    <div class="dkkd-info">
+                        <div class="col-md-12">
+                            <p class="title">Trụ sở:</p>
+                            <p>Đường 17, linh Trung, Thủ Đức, TP Hồ Chí Minh, Việt Nam </p>
+                            <p class="title">Email:</p>
+                            <p><a href="mailto:info@greenhotel.vn" style="text-decoration: none;">info@greenhotel.vn</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <div class="container-footer">
+                    <div class="d-flex flex-column-reverse flex-md-row justify-content-center align-items-center">
+                        <div class="col-md-5">
+                            <div class="left">
+                                <p>© 2022 Green Hotel. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="center">
+                                <div class="logo">
+                                    <img src="../img/logo.png.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="right">
+                                <a href="" id="fb">
+                                    <i class="fa-brands fa-facebook"></i></a>
+                                <a href="" id="instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="" id="ytb">
+                                    <i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            const room1 = document.querySelector('.item-room-book1-js')
+            const room2 = document.querySelector('.item-room-book2-js')
+            const room3 = document.querySelector('.item-room-book3-js')
+            const room4 = document.querySelector('.item-room-book4-js')
+
+            const cancel1 = document.querySelector('.cancel1-js')
+            const cancel2 = document.querySelector('.cancel2-js')
+            const cancel3 = document.querySelector('.cancel3-js')
+            const cancel4 = document.querySelector('.cancel4-js')
+
+            const bookBtn1 = document.querySelector('.book-btn1-js')
+            const bookBtn2 = document.querySelector('.book-btn2-js')
+            const bookBtn3 = document.querySelector('.book-btn3-js')
+            const bookBtn4 = document.querySelector('.book-btn4-js')
+
+            function showRoom1() {
+                room1.classList.add('open')
+            }
+            function hideRoom1() {
+                room1.classList.remove('open')
+            }
+            function showRoom2() {
+                room2.classList.add('open')
+            }
+            function hideRoom2() {
+                room2.classList.remove('open')
+            }
+            function showRoom3() {
+                room3.classList.add('open')
+            }
+            function hideRoom3() {
+                room3.classList.remove('open')
+            }
+            function showRoom4() {
+                room4.classList.add('open')
+            }
+            function hideRoom4() {
+                room4.classList.remove('open')
+            }
+            bookBtn1.addEventListener("click", showRoom1);
+            bookBtn2.addEventListener("click", showRoom2);
+            bookBtn3.addEventListener("click", showRoom3);
+            bookBtn4.addEventListener("click", showRoom4);
+
+            cancel1.addEventListener("click", hideRoom1);
+            cancel2.addEventListener("click", hideRoom2);
+            cancel3.addEventListener("click", hideRoom3);
+            cancel4.addEventListener("click", hideRoom4);
+        </script>
+        <script>
+            let headerMenuBookNow = document.querySelector(".header-booknow");
+            let lastScrollYBookNow = window.scrollY;
+            window.addEventListener("scroll", () => {
+                if (lastScrollYBookNow < window.scrollY) {
+                    headerMenuBookNow.classList.add("menu_hide");
+                }
+                else {
+                    headerMenuBookNow.classList.remove("menu_hide");
+                }
+                lastScrollYBookNow = window.scrollY;
+            });
+        </script>
+</body>
+
+</html>

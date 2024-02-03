@@ -1,0 +1,225 @@
+.thanh_body{
+    position: relative;
+    top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.thanh_main{
+    width: 80%;   
+    display: flex;
+    column-gap: 5%;
+}
+
+.thanh_container{
+    width: 35%;
+}
+.thanh_container p{
+    line-height: 30px;
+}
+.thanh_slideshow{
+    height: 500px;
+    width: 751.01px;
+    vertical-align: middle;
+}
+
+
+.thanh_list_img{
+    position: relative;
+}
+.thanh_list_img img{
+    height: 500px;
+    width: 751.01px;
+    vertical-align: middle;
+}
+
+.thanh-readmore {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #F1EFEF; */
+    color: #7D7C7C;
+    border: .5px solid #F1EFEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    top: 50px;
+    left: 40%;
+    transition: all .5s linear;
+    background: transparent;
+}
+.thanh-readmore::before{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    background-color: #B0A695;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin:bottom left;
+    transform: scale(0);
+    transition: .4s linear transform;
+}
+.thanh-readmore::after{
+    position: absolute;
+    background-color: #776B5D;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scale(0);
+    transition: transform .4s linear;
+    transform-origin: top right;
+}
+.thanh-readmore:hover::before, .thanh-readmore:hover::after{
+    transform: scale(1);
+}
+.thanh-readmore:hover{
+    background: #776B5D;
+    color: #F3EEEA;
+    border: none;
+}
+.thanh-readmore:hover a{
+    z-index: 100;
+}
+.thanh-readmore p p {
+    transition: .5s ease;
+}
+
+
+.thanh-readmore_body{
+    text-decoration: none;
+}
+.thanh_slideshow .fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@keyframes fade {
+    from {opacity: .6} 
+    to {opacity: 1}
+}
+.thanh_slideshow .prev,.thanh_slideshow .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: white;
+    padding: 16px;
+    user-select: none;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.thanh_slideshow .prev{
+    left: 0;
+}
+.thanh_slideshow .next {
+   right: 0;
+}
+.thanh_slideshow .prev:hover,.thanh_slideshow .next:hover {
+    background-color: rgba(0,0,0,0.8);  
+}
+
+.thanh_slideshow .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+    /* modal */
+    .thanh-modal {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        align-items: center;
+        justify-content: center;
+        display: none;
+        z-index: 100000;
+        /* cho nó ẩn đi */
+    
+    }
+    
+    .thanh-modal.open {
+        display: flex;
+    }
+    
+    .thanh-modal-container {
+        background-color: #fff;
+        min-height: 200px;
+        width: 800px;
+        max-width: calc(100%-32px);
+        position: relative;
+        animation: modalFaceIn ease 0.5s;
+        /* add chuyển động vào  */
+    }
+    
+    .thanh-modal-header {
+        background-color: #009688;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    .thanh-modal .thanh-modal-heading-icon {
+        margin-right: 16px;
+    }
+    
+    .thanh-modal-close {
+        position: absolute;
+        right: 5px;
+        top: 3px;
+        padding: 12px;
+        cursor: pointer;   
+    }
+    
+    .thanh-modal-title {
+        padding: 11px;
+    }
+    
+    .thanh-modal .fa-solid .fa-xmark {
+        color: #000;
+    }
+    
+    .thanh-bar-help {
+        height: 1px;
+        border-bottom: 1px #000 solid;
+        margin-bottom: 5px;
+    }
+    .thanh-content-modal{
+        padding: 12px;
+    }
+   
+ 
+    /* tạo chuyển động */
+    @keyframes modalFaceIn {
+        from {
+            opacity: 0;
+            transform: translateY(-140px);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }

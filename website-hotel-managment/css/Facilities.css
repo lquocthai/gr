@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-facilities{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+.container-facilities p{
+    line-height: 30px;
+}
+.d-flex {
+    display: flex ;
+    width: 80%;
+    column-gap: 5%;
+}
+.d-flex-wrapper{
+    width: 100%; 
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.d-block {
+    display: block;
+}
+/* .text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+} */
+
+
+.facilities-title {
+    position: relative;
+    font-size: 40px;
+    margin-top: 250px;
+    margin-left: 120px;    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    user-select: none;
+}
+
+.facilities-photos {
+    width: 60%;
+    margin-top: 0px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facilities-des{
+    width: 35%;
+}
+.facilities-photos img {
+    height: 500px;
+    width: 751.01px;
+}
+.facilities-type {
+    font-size: 36px;
+    margin-bottom: 100px;
+}
+
+
+.btn-view-more {
+    position: relative;
+    text-decoration: none;
+    background-color: #F1EFEF;
+    color: #7D7C7C;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    transition: color .5s linear;
+    z-index: 5;
+    border: none;
+}
+.btn-view-more::before{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    background-color: #B0A695;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin:top left;
+    transform: scale(0);
+    transition: .4s linear transform;
+}
+.btn-view-more::after{
+    position: absolute;
+    background-color: #776B5D;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scale(0);
+    transition: transform .4s linear;
+    transform-origin: bottom right;
+}
+.btn-view-more:hover::before, .btn-view-more:hover::after{
+    transform: scale(1);
+}
+.btn-view-more:hover{
+    background: transparent;
+    color: #F3EEEA;
+    border: none;
+}
+
+/* modal */
+.modal-facilities {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 100000;
+    /* cho nó ẩn đi */
+
+}
+
+.modal-facilities.open {
+    display: flex;
+}
+
+.modal-container-facilities {
+    background-color: #fff;
+    width: 800px;
+    max-width: calc(100%-32px);
+    position: relative;
+    animation: modalFaceIn ease 0.5s;
+    /* add chuyển động vào  */
+}
+
+.modal-header-facilities {
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-facilities .modal-heading-icon-facilities {
+    margin-right: 16px;
+}
+
+.modal-close-facilities {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-title-facilities {
+    padding: 11px;
+}
+
+.fa-solid.fa-xmark {
+    color: #000;
+}
+
+.bar-help {
+    height: 1px;
+    border-bottom: 1px #000 solid;
+}
+
+.content-modal-facilities {
+    padding: 20px;
+}
+
+
+
+/* tạo chuyển động */
+@keyframes modalFaceIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* modal book car */
+.form-control.d-block {
+    width: 100%;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    padding: 10px;
+}
+.modal-body >.row {
+    margin-top: 10px;
+}
+.bookCar-btn,
+.form-group {
+    padding: 0 12px;
+}
+.bookCar-btn,
+.request {
+   margin-top: 10px; 
+}
+textarea#message {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px #ccc solid;
+}
+.bookCar-btn {
+    margin: 15px 0 10px 12px;
+    padding: 16px 20px;
+    border-radius: 5px;
+}
+
+.facilities-book-car-btn  {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif; 
+    border: .5px solid #F1EFEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    top: 50px;
+    left: 40%;
+    transition: all .3s linear;
+    background: #7D7C7C;
+    
+}
+.facilities-book-car-btn a{
+    color: #fff;
+}
+
+.facilities-book-car-btn:hover{
+    background: #60513f;
+}
+.facilities-btn {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7D7C7C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    top: 50px;
+    left: 40%;
+    transition: all .5s linear;
+    background: transparent;
+}
+
+/* slide show start  */
+/* Slideshow container */
+.slideshow-container-facilities {
+    position: relative;
+}
+.slideshow-container-facilities img{
+    height: 400px;
+}
+  
+  /* Hide the images by default */
+  .mySlides1-facilities,
+  .mySlides2-facilities,
+  .mySlides3-facilities,
+  .mySlides-facilities {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev-facilities, .next-facilities {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next-facilities {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev-facilities:hover, .next-facilities:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+   
+
+  
+  /* Fading animation */
+  .fade-facilities {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/* slide show end  */
+
